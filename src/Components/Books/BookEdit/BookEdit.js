@@ -24,9 +24,13 @@ const BookEdit = (props) => {
         const category = formData.category !== "EMPTY" ? formData.category : props.book.category;
         //id, name, author, availableCopies, category
         props.onBookEdit(props.book.id,name,author,availableCopies,category);
-
-        //window.location.href="https://library-manager-193181.herokuapp.com/books"
+		setTimeout(redirect, 500)
     }
+
+	const redirect = () => {
+        window.location.href="https://library-manager-193181.herokuapp.com/books"
+	}
+	
 
     return(
         <div className="container mt-5 mx-auto w-50">
