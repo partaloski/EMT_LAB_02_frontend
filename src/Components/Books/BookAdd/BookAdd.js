@@ -24,7 +24,7 @@ const BookAdd = (props) => {
         //id, name, author, availableCopies, category
         props.onAddBook(name, author, availableCopies, category);
 
-        window.location.href="http://localhost:3000/books"
+        window.location.href="https://library-manager-193181.herokuapp.com/books"
     }
 
     return(
