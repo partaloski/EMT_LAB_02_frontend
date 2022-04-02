@@ -60,7 +60,7 @@ const BookEdit = (props) => {
                     <select name="category" className="form-control" onChange={handleChange}>
                         {props.categories.map(category =>{
                                 if(props.book.category !== undefined && props.book.category === category)
-                                    return <option value={category}>{category}</option>
+                                    return <option selected value={category}>{category}</option>
                                 else
                                     return <option value={category}>{category}</option>
                             }
@@ -72,7 +72,7 @@ const BookEdit = (props) => {
                     <select name="author" className="form-control" onChange={handleChange}>
                         {props.authors.map(author =>{
                                 if(props.book.author !== undefined && props.book.author.id === author.id)
-                                    return <option  value={author.id}>{author.name + ' ' + author.surname}</option>
+                                    return <option selected value={author.id}>{author.name + ' ' + author.surname}</option>
                                 else
                                     return <option value={author.id}>{author.name + ' ' + author.surname}</option>
                             }
