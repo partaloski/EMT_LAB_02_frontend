@@ -25,7 +25,7 @@ const BookEdit = (props) => {
         //id, name, author, availableCopies, category
         props.onBookEdit(props.book.id,name,author,availableCopies,category);
 
-        window.location.href="https://library-manager-193181.herokuapp.com/books"
+        //window.location.href="https://library-manager-193181.herokuapp.com/books"
     }
 
     return(
